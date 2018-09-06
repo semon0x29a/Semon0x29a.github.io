@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Semon0x29a.github.io/"/>
-  <updated>2018-09-06T07:00:26.771Z</updated>
+  <updated>2018-09-06T07:17:18.086Z</updated>
   <id>http://Semon0x29a.github.io/</id>
   
   <author>
@@ -17,42 +17,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Test</title>
-    <link href="http://Semon0x29a.github.io/2018/09/06/Test/"/>
-    <id>http://Semon0x29a.github.io/2018/09/06/Test/</id>
-    <published>2018-09-06T06:34:46.000Z</published>
-    <updated>2018-09-06T07:00:26.771Z</updated>
-    
-    <content type="html"><![CDATA[<p>Testing</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello, world!\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Testing&lt;/p&gt;
-&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;b
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello_world!</title>
     <link href="http://Semon0x29a.github.io/2018/09/06/Hello-world/"/>
     <id>http://Semon0x29a.github.io/2018/09/06/Hello-world/</id>
     <published>2018-09-06T05:13:38.000Z</published>
-    <updated>2018-09-06T07:11:51.212Z</updated>
+    <updated>2018-09-06T07:17:18.086Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="测试一下新玩具"><a href="#测试一下新玩具" class="headerlink" title="测试一下新玩具"></a>测试一下新玩具</h1><p>Test latex:</p><p>$$ \sum_{i = 1}^{n} a^{i - 1} $$</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="测试一下新玩具"><a href="#测试一下新玩具" class="headerlink" title="测试一下新玩具"></a>测试一下新玩具</h1><p>Test Code:</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello, world!\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Test latex:</p><p>$$ \sum_{i = 1}^{n} a^{i - 1} $$</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;测试一下新玩具&quot;&gt;&lt;a href=&quot;#测试一下新玩具&quot; class=&quot;headerlink&quot; title=&quot;测试一下新玩具&quot;&gt;&lt;/a&gt;测试一下新玩具&lt;/h1&gt;&lt;p&gt;Test latex:&lt;/p&gt;
-&lt;p&gt;$$ \sum_{i = 1}^{n} a^{i - 1} $
+        &lt;h1 id=&quot;测试一下新玩具&quot;&gt;&lt;a href=&quot;#测试一下新玩具&quot; class=&quot;headerlink&quot; title=&quot;测试一下新玩具&quot;&gt;&lt;/a&gt;测试一下新玩具&lt;/h1&gt;&lt;p&gt;Test Code:&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;tabl
       
     
     </summary>
