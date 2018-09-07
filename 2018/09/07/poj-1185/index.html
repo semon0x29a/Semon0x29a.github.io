@@ -87,7 +87,7 @@
 <meta property="og:description" content="司令部的将军们打算在NM的网格地图上部署他们的炮兵部队。一个NM的地图由N行M列组成，地图的每一格可能是山地（用”H” 表示），也可能是平原（用”P”表示），如下图。在每一格平原地形上最多可以布置一支炮兵部队（山地上不能够部署炮兵部队）；一支炮兵部队在地图上的攻击范围如图中黑色区域所示：   如果在地图中的灰色所标识的平原上部署一支炮兵部队，则图中的黑色的网格表示它能够攻击到的区域：沿横向左右各两">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://odzkskevi.qnssl.com/ba1d4fa736b99550a7ee43784c287df9?v=1535812253">
-<meta property="og:updated_time" content="2018-09-07T10:24:06.678Z">
+<meta property="og:updated_time" content="2018-09-07T10:30:02.790Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="poj-1185 炮兵阵地">
 <meta name="twitter:description" content="司令部的将军们打算在NM的网格地图上部署他们的炮兵部队。一个NM的地图由N行M列组成，地图的每一格可能是山地（用”H” 表示），也可能是平原（用”P”表示），如下图。在每一格平原地形上最多可以布置一支炮兵部队（山地上不能够部署炮兵部队）；一支炮兵部队在地图上的攻击范围如图中黑色区域所示：   如果在地图中的灰色所标识的平原上部署一支炮兵部队，则图中的黑色的网格表示它能够攻击到的区域：沿横向左右各两">
@@ -309,6 +309,7 @@
 <p>Output<br>仅一行，包含一个整数K，表示最多能摆放的炮兵部队的数量。</p>
 <p>Sample Input<br>5 4<br>PHPP<br>PPHH<br>PPPP<br>PHPP<br>PHHP</p>
 <p>Sample Output<br>6</p>
+<hr>
 <p>状压DP模版题</p>
 <p>由于每行长度不超过10，可以考虑将每行的状态进行压缩。对于原地图，将山地对应二进制位置为1，平原对应置为0。摆放方案中部署炮兵的位置置为1，否则置为0。</p>
 <p>因为同一行的炮兵间距离至少为2，故每行状态数不超过70。可先将状态及其对应炮兵数预处理出来，然后枚举可行状态即可。</p>
