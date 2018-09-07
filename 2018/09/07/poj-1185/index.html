@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Semon0x29a&#39;s Blog">
-<meta property="og:url" content="http://Semon0x29a.github.io/index.html">
+<meta name="description" content="题目链接 &amp;lt;–! more –&amp;gt; 状压DP模版题 由于每行长度不超过10，可以考虑将每行的状态进行压缩。对于原地图，将山地对应二进制位置为1，平原对应置为0。摆放方案中部署炮兵的位置置为1，否则置为0。 因为同一行的炮兵间距离至少为2，故每行状态数不超过70。可先将状态及其对应炮兵数预处理出来，然后枚举可行状态即可。 转移方程： $ dp[i][j][k] = \max(dp[i][j">
+<meta property="og:type" content="article">
+<meta property="og:title" content="poj-1185_炮兵阵地">
+<meta property="og:url" content="http://Semon0x29a.github.io/2018/09/07/poj-1185/index.html">
 <meta property="og:site_name" content="Semon0x29a&#39;s Blog">
+<meta property="og:description" content="题目链接 &amp;lt;–! more –&amp;gt; 状压DP模版题 由于每行长度不超过10，可以考虑将每行的状态进行压缩。对于原地图，将山地对应二进制位置为1，平原对应置为0。摆放方案中部署炮兵的位置置为1，否则置为0。 因为同一行的炮兵间距离至少为2，故每行状态数不超过70。可先将状态及其对应炮兵数预处理出来，然后枚举可行状态即可。 转移方程： $ dp[i][j][k] = \max(dp[i][j">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-07T10:21:03.309Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Semon0x29a&#39;s Blog">
+<meta name="twitter:title" content="poj-1185_炮兵阵地">
+<meta name="twitter:description" content="题目链接 &amp;lt;–! more –&amp;gt; 状压DP模版题 由于每行长度不超过10，可以考虑将每行的状态进行压缩。对于原地图，将山地对应二进制位置为1，平原对应置为0。摆放方案中部署炮兵的位置置为1，否则置为0。 因为同一行的炮兵间距离至少为2，故每行状态数不超过70。可先将状态及其对应炮兵数预处理出来，然后枚举可行状态即可。 转移方程： $ dp[i][j][k] = \max(dp[i][j">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://Semon0x29a.github.io/"/>
+  <link rel="canonical" href="http://Semon0x29a.github.io/2018/09/07/poj-1185/"/>
 
 
 
 
 
-  <title>Semon0x29a's Blog</title>
+  <title>poj-1185_炮兵阵地 | Semon0x29a's Blog</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/07/poj-1185/" itemprop="url">poj-1185_炮兵阵地</a></h1>
+          <h1 class="post-title" itemprop="name headline">poj-1185_炮兵阵地</h1>
         
 
         <div class="post-meta">
@@ -298,9 +299,7 @@
       
 
       
-        
-          
-            <p><a href="http://poj.org/problem?id=1185" target="_blank" rel="noopener">题目链接</a></p>
+        <p><a href="http://poj.org/problem?id=1185" target="_blank" rel="noopener">题目链接</a></p>
 <p>&lt;–! more –&gt;</p>
 <p>状压DP模版题</p>
 <p>由于每行长度不超过10，可以考虑将每行的状态进行压缩。对于原地图，将山地对应二进制位置为1，平原对应置为0。摆放方案中部署炮兵的位置置为1，否则置为0。</p>
@@ -310,8 +309,6 @@
 <p>其中i为行数，j为当前行状态，k为i-1行状态，t为i-2行状态。</p>
 <p>Code:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// status-&gt;状态，num-&gt;炮兵数， tot-&gt;总状态数</span></span><br><span class="line"><span class="keyword">int</span> status[<span class="number">70</span>], num[<span class="number">70</span>], tot;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">105</span>][<span class="number">70</span>][<span class="number">70</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 预处理可行状态</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">(<span class="keyword">int</span> mx)</span> </span>&#123;</span><br><span class="line">    tot = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; mx; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> ((i &amp; (i &lt;&lt; <span class="number">1</span>)) || (i &amp; (i &gt;&gt; <span class="number">1</span>))) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span> ((i &amp; (i &lt;&lt; <span class="number">2</span>)) || (i &amp; (i &gt;&gt; <span class="number">2</span>))) <span class="keyword">continue</span>;</span><br><span class="line">        status[tot++] = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; tot; j++) &#123;</span><br><span class="line">        <span class="keyword">int</span> i = status[j];</span><br><span class="line">        <span class="keyword">for</span> (num[j] = <span class="number">0</span>; i; i &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i &amp; <span class="number">1</span>) &#123;</span><br><span class="line">                num[j]++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// a-&gt;地图状态</span></span><br><span class="line"><span class="keyword">int</span> n, m, a[<span class="number">105</span>];</span><br><span class="line"><span class="keyword">char</span> s[<span class="number">12</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;m) == <span class="number">2</span>) &#123;</span><br><span class="line">        init(<span class="number">1</span> &lt;&lt; m);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 地图状态</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%s"</span>, s);</span><br><span class="line">            a[i] = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (s[j] == <span class="string">'H'</span>) &#123;</span><br><span class="line">                    a[i] |= <span class="number">1</span> &lt;&lt; j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 第一行</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tot; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[<span class="number">0</span>] &amp; status[i]) <span class="keyword">continue</span>;</span><br><span class="line">            dp[<span class="number">0</span>][i][<span class="number">0</span>] = num[i];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 第二行</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tot; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[<span class="number">1</span>] &amp; status[i]) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; tot; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (status[i] &amp; status[j]) <span class="keyword">continue</span>;</span><br><span class="line">                dp[<span class="number">1</span>][i][j] = max(dp[<span class="number">1</span>][i][j], dp[<span class="number">0</span>][j][<span class="number">0</span>] + num[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 第三行及以后</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; tot; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (a[i] &amp; status[j]) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; tot; k++) &#123;</span><br><span class="line">                    <span class="keyword">if</span> ((a[i - <span class="number">1</span>] &amp; status[k]) || (status[j] &amp; status[k])) <span class="keyword">continue</span>;</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> t = <span class="number">0</span>; t &lt; tot; t++) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (a[i - <span class="number">2</span>] &amp; status[t] || (status[j] &amp; status[t]) || (status[k] &amp; status[t])) &#123;</span><br><span class="line">                            <span class="keyword">continue</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                        dp[i][j][k] = max(dp[i][j][k], dp[i - <span class="number">1</span>][k][t] + num[j]);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tot; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; tot; j++) &#123;</span><br><span class="line">                res = max(res, dp[n - <span class="number">1</span>][i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, res);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -328,135 +325,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://Semon0x29a.github.io/2018/09/06/Hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Semon0x29a">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Semon0x29a's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/06/Hello-world/" itemprop="url">Hello_world!</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-06T13:13:38+08:00">
-                2018-09-06
-              </time>
+              <a href="/2018/09/06/Hello-world/" rel="next" title="Hello_world!">
+                <i class="fa fa-chevron-left"></i> Hello_world!
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="测试一下新玩具"><a href="#测试一下新玩具" class="headerlink" title="测试一下新玩具"></a>测试一下新玩具</h1><p>Test Code:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello, world!\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Test latex:</p>
-<p>$$ \sum_{i = 1}^{n} a^{i - 1} $$</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -466,10 +356,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -477,6 +368,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -673,6 +568,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
