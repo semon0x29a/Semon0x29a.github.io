@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="测试一下新玩具Test Code: 1234#include &amp;lt;stdio.h&amp;gt;int main() &amp;#123;    printf(&quot;Hello, world!\n&quot;);&amp;#125; Test latex: $$ \sum_{i = 1}^{n} a^{i - 1} $$">
+<meta name="description" content="F(x)Time Limit: 1000/500 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)Total Submission(s): 8723    Accepted Submission(s): 3440  Problem Description For a decimal number x with n digit">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello_world!">
-<meta property="og:url" content="http://Semon0x29a.github.io/2018/09/06/Hello-world/index.html">
+<meta property="og:title" content="HDU-4734 F(x)">
+<meta property="og:url" content="http://Semon0x29a.github.io/2018/09/12/HDU-4734/index.html">
 <meta property="og:site_name" content="Semon&#39;s Blog">
-<meta property="og:description" content="测试一下新玩具Test Code: 1234#include &amp;lt;stdio.h&amp;gt;int main() &amp;#123;    printf(&quot;Hello, world!\n&quot;);&amp;#125; Test latex: $$ \sum_{i = 1}^{n} a^{i - 1} $$">
+<meta property="og:description" content="F(x)Time Limit: 1000/500 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)Total Submission(s): 8723    Accepted Submission(s): 3440  Problem Description For a decimal number x with n digit">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-06T07:17:18.086Z">
+<meta property="og:updated_time" content="2018-09-12T14:37:06.238Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello_world!">
-<meta name="twitter:description" content="测试一下新玩具Test Code: 1234#include &amp;lt;stdio.h&amp;gt;int main() &amp;#123;    printf(&quot;Hello, world!\n&quot;);&amp;#125; Test latex: $$ \sum_{i = 1}^{n} a^{i - 1} $$">
+<meta name="twitter:title" content="HDU-4734 F(x)">
+<meta name="twitter:description" content="F(x)Time Limit: 1000/500 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)Total Submission(s): 8723    Accepted Submission(s): 3440  Problem Description For a decimal number x with n digit">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://Semon0x29a.github.io/2018/09/06/Hello-world/"/>
+  <link rel="canonical" href="http://Semon0x29a.github.io/2018/09/12/HDU-4734/"/>
 
 
 
 
 
-  <title>Hello_world! | Semon's Blog</title>
+  <title>HDU-4734 F(x) | Semon's Blog</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://Semon0x29a.github.io/2018/09/06/Hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://Semon0x29a.github.io/2018/09/12/HDU-4734/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Semon0x29a">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello_world!</h1>
+          <h1 class="post-title" itemprop="name headline">HDU-4734 F(x)</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-06T13:13:38+08:00">
-                2018-09-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-12T22:14:51+08:00">
+                2018-09-12
               </time>
             
 
@@ -299,11 +299,21 @@
       
 
       
-        <h1 id="测试一下新玩具"><a href="#测试一下新玩具" class="headerlink" title="测试一下新玩具"></a>测试一下新玩具</h1><p>Test Code:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello, world!\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Test latex:</p>
-<p>$$ \sum_{i = 1}^{n} a^{i - 1} $$</p>
-
+        <blockquote class="blockquote-center"><p><strong>F(x)</strong><br>Time Limit: 1000/500 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 8723    Accepted Submission(s): 3440</p>
+</blockquote>
+<p><strong>Problem Description</strong></p>
+<p>For a decimal number x with n digits (AnAn-1An-2 … A2A1), we define its weight as $F(x) = A_n * 2_{n-1} + A_{n-1} * 2_{n-2}+…+ A_2 * 2 + A_1 * 1$. Now you are given two numbers A and B, please calculate how many numbers are there between 0 and B, inclusive, whose weight is no more than F(A).</p>
+<a id="more"></a>
+<p><strong>Input</strong><br>The first line has a number T (T &lt;= 10000) , indicating the number of test cases.<br>For each test case, there are two numbers A and B (0 &lt;= A,B &lt; 109)</p>
+<p><strong>Output</strong><br>For every case,you should output “Case #t: “ at first, without quotes. The t is the case number starting from 1. Then output the answer.</p>
+<p><strong>Sample Input</strong><br>3<br>0 100<br>1 10<br>5 100</p>
+<p><strong>Sample Output</strong><br>Case #1: 1<br>Case #2: 2<br>Case #3: 13</p>
+<p><strong>题意：</strong></p>
+<p>求$\sum_{ i = 0 }^{ B } [F(i) &lt;= F(A)]$</p>
+<p><strong>Solution:</strong></p>
+<p>一开始我的做法是基于$dp[u][prefix]$的数位dp， 第一维表示当前数位， 第二维表示前部的级数和， 但是数据组数太多，会TLE。<br>于是考虑将第二维倒过来，变为$dp[u][F(A) - prefix]$， 这样就可以复用前面数据计算过的dp数组， 于是$O(Accepted)$</p>
+<p><strong>Code:</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> endl <span class="meta-string">'\n'</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, a, b;</span><br><span class="line"><span class="keyword">int</span> v[<span class="number">12</span>];</span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">12</span>][<span class="number">9300</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">bool</span> limits, <span class="keyword">int</span> pre)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (pre &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (u == <span class="number">-1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (!limits &amp;&amp; dp[u][pre] != <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> dp[u][pre];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>, top = limits ? v[u] : <span class="number">9</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= top; i++) &#123;</span><br><span class="line">        res += dfs(u - <span class="number">1</span>, limits &amp;&amp; (i == top), pre - i * (<span class="number">1</span> &lt;&lt; u));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!limits) dp[u][pre] = res;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (n = <span class="number">0</span>; b &gt; <span class="number">0</span>; b /= <span class="number">10</span>) &#123;</span><br><span class="line">        v[n++] = b % <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>, mul = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (a &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        sum += (a % <span class="number">10</span>) * mul;</span><br><span class="line">        mul &lt;&lt;= <span class="number">1</span>;</span><br><span class="line">        a /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dfs(n - <span class="number">1</span>, <span class="literal">true</span>, sum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="number">0</span>); <span class="built_in">cin</span>.tie(<span class="number">0</span>); <span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">-1</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> T, Case = <span class="number">0</span>; <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span> (T--) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Case #"</span> &lt;&lt; ++Case &lt;&lt; <span class="string">": "</span> &lt;&lt; calc() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -327,15 +337,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/09/11/luoguP2756/" rel="next" title="P2756 飞行员配对方案问题">
+                <i class="fa fa-chevron-left"></i> P2756 飞行员配对方案问题
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/07/poj-1185/" rel="prev" title="POJ-1185 炮兵阵地">
-                POJ-1185 炮兵阵地 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -387,17 +397,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -455,22 +456,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#测试一下新玩具"><span class="nav-number">1.</span> <span class="nav-text">测试一下新玩具</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
