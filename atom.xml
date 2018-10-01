@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Semon0x29a.github.io/"/>
-  <updated>2018-09-24T14:05:45.097Z</updated>
+  <updated>2018-10-01T06:38:59.064Z</updated>
   <id>http://Semon0x29a.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>p2765</title>
+    <link href="http://Semon0x29a.github.io/2018/10/01/p2765/"/>
+    <id>http://Semon0x29a.github.io/2018/10/01/p2765/</id>
+    <published>2018-10-01T03:16:37.000Z</published>
+    <updated>2018-10-01T06:38:59.064Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.luogu.org/problemnew/show/P2765" target="_blank" rel="noopener">题目链接</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>问题描述：</p><p>假设有n$$(4 &lt;= n &lt;= 55)$$根柱子，现要按下述规则在这n根柱子中依次放入编号为1，2，3，…的球。</p><p>（1）每次只能在某根柱子的最上面放球。</p><p>（2）在同一根柱子中，任何2个相邻球的编号之和为完全平方数。</p><p>试设计一个算法，计算出在n根柱子上最多能放多少个球。例如，在4 根柱子上最多可放11 个球。</p><p>编程任务：</p><p>对于给定的n，计算在n根柱子上最多能放多少个球。</p><a id="more"></a><h2 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h2><p>输入格式：</p><p>第1 行有1个正整数n，表示柱子数。</p><p>输出格式：</p><p>程序运行结束时，将n 根柱子上最多能放的球数以及相应的放置方案输出。文件的第一行是球数。接下来的n行，每行是一根柱子上的球的编号。</p><h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p>输入样例：</p><pre><code>4</code></pre><p>输出样例：</p><pre><code>111 82 7 93 6 104 5 11</code></pre><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>此题据说贪心可做，但因为属于网络流24题，所以还是用网络流来做了<del>(才不是不会贪心做法呢)</del>。</p><p>(未完待续)</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.luogu.org/problemnew/show/P2765&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;问题描述：&lt;/p&gt;
+&lt;p&gt;假设有n$$(4 &amp;lt;= n &amp;lt;= 55)$$根柱子，现要按下述规则在这n根柱子中依次放入编号为1，2，3，…的球。&lt;/p&gt;
+&lt;p&gt;（1）每次只能在某根柱子的最上面放球。&lt;/p&gt;
+&lt;p&gt;（2）在同一根柱子中，任何2个相邻球的编号之和为完全平方数。&lt;/p&gt;
+&lt;p&gt;试设计一个算法，计算出在n根柱子上最多能放多少个球。例如，在4 根柱子上最多可放11 个球。&lt;/p&gt;
+&lt;p&gt;编程任务：&lt;/p&gt;
+&lt;p&gt;对于给定的n，计算在n根柱子上最多能放多少个球。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Daily" scheme="http://Semon0x29a.github.io/categories/Daily/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>中秋快乐鸭！</title>
