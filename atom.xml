@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Semon0x29a.github.io/"/>
-  <updated>2018-10-10T09:44:25.175Z</updated>
+  <updated>2018-10-15T13:39:56.680Z</updated>
   <id>http://Semon0x29a.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>wc2013CandyPark</title>
+    <link href="http://Semon0x29a.github.io/2018/10/15/wc2013CandyPark/"/>
+    <id>http://Semon0x29a.github.io/2018/10/15/wc2013CandyPark/</id>
+    <published>2018-10-15T13:38:29.000Z</published>
+    <updated>2018-10-15T13:39:56.680Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Winter-Camp-2013-糖果公园"><a href="#Winter-Camp-2013-糖果公园" class="headerlink" title="Winter Camp 2013 糖果公园"></a>Winter Camp 2013 糖果公园</h1><p>树上莫队带修改，留坑待写。</p><p><a href="http://uoj.ac/problem/58" target="_blank" rel="noopener">题目链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Winter-Camp-2013-糖果公园&quot;&gt;&lt;a href=&quot;#Winter-Camp-2013-糖果公园&quot; class=&quot;headerlink&quot; title=&quot;Winter Camp 2013 糖果公园&quot;&gt;&lt;/a&gt;Winter Camp 2013 糖果公园&lt;/
+      
+    
+    </summary>
+    
+      <category term="Daily" scheme="http://Semon0x29a.github.io/categories/Daily/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>P4016 负载平衡问题</title>
