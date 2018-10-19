@@ -317,7 +317,8 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/09/12/HDU-4734/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/12/HDU-4734/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/09/12/HDU-4734/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -427,7 +428,14 @@
 
   
     <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
+
   
 
 
@@ -678,6 +686,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://semon0x29a.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://Semon0x29a.github.io/2018/09/12/HDU-4734/';
+          this.page.identifier = '2018/09/12/HDU-4734/';
+          this.page.title = 'HDU-4734 F(x)';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://semon0x29a.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -693,38 +721,12 @@
 
 
 
-  
 
 
 
 
 
 
-
-
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: true,
-        notify: true,
-        appId: 'OznsJ384e6PSsGGuqTCe88E3-gzGzoHsz',
-        appKey: 'U8KWBi8pAxdFiP3KwtCRmJuc',
-        placeholder: 'Say something here...',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
 
