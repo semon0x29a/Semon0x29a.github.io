@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Semon0x29a.github.io/"/>
-  <updated>2018-11-26T07:35:40.391Z</updated>
+  <updated>2019-01-17T06:39:53.170Z</updated>
   <id>http://Semon0x29a.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jan.17th 2019</title>
+    <link href="http://Semon0x29a.github.io/2019/01/17/190117/"/>
+    <id>http://Semon0x29a.github.io/2019/01/17/190117/</id>
+    <published>2019-01-17T06:26:11.000Z</published>
+    <updated>2019-01-17T06:39:53.170Z</updated>
+    
+    <content type="html"><![CDATA[<p>期末考试结束啦。</p><a id="more"></a><hr><p>数分三直接咕掉啦，等补考吧……</p><p>Web完全乱搞啊，怕是补考见啦……</p><p>离散还行啊……</p><p>网页设计一堆人100分啊……</p><p>高代是不是要<strong>重·重修</strong>了啊……</p><p>数分一感觉可以啊，希望老师手下留情啊……</p><hr><p>Sutirami的rating已经1869了啊， 再来一次Combine场就紫了吧？</p><hr><p>先来一张目前看过最全面的竞赛技能树……</p><p><img src="\image\ACM_Skills.jpg" alt="竞赛技能树"></p><p>然后就没啦 <del>，去蹭18级的训练赛啦</del> 。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;期末考试结束啦。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JustWannaSpeakSth" scheme="http://Semon0x29a.github.io/categories/JustWannaSpeakSth/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Nov.26th</title>
@@ -418,30 +438,6 @@
     </summary>
     
       <category term="Replay" scheme="http://Semon0x29a.github.io/categories/Replay/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HDU-4734 F(x)</title>
-    <link href="http://Semon0x29a.github.io/2018/09/12/HDU-4734/"/>
-    <id>http://Semon0x29a.github.io/2018/09/12/HDU-4734/</id>
-    <published>2018-09-12T14:14:51.000Z</published>
-    <updated>2018-09-13T07:31:50.199Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=4734" target="_blank" rel="noopener">题目链接</a></p><blockquote class="blockquote-center"><p><strong>F(x)</strong><br>Time Limit: 1000/500 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 8723    Accepted Submission(s): 3440</p></blockquote><p><strong>Problem Description</strong></p><p>For a decimal number x with n digits ($A^{n}A^{n-1}A^{n-2} … A^{2}A^{1}$), we define its weight as $F(x) = A_n * 2^{n-1} + A_{n-1} * 2^{n-2}+…+ A_2 * 2 + A_1 * 1$. Now you are given two numbers A and B, please calculate how many numbers are there between 0 and B, inclusive, whose weight is no more than F(A).</p><a id="more"></a><p><strong>Input</strong><br>The first line has a number T (T &lt;= 10000) , indicating the number of test cases.<br>For each test case, there are two numbers A and B ($0 &lt;= A,B &lt; 10^9$)</p><p><strong>Output</strong><br>For every case,you should output “Case #t: “ at first, without quotes. The t is the case number starting from 1. Then output the answer.</p><p><strong>Sample Input</strong><br>3<br>0 100<br>1 10<br>5 100</p><p><strong>Sample Output</strong><br>Case #1: 1<br>Case #2: 2<br>Case #3: 13</p><p><strong>题意：</strong></p><p>求$\sum_{ i = 0 }^{ B } [F(i) &lt;= F(A)]$</p><p><strong>Solution:</strong></p><p>一开始我的做法是基于$dp[u][prefix]$的数位dp， 第一维表示当前数位， 第二维表示前部的级数和， 但是数据组数太多，会TLE。<br>于是考虑将第二维倒过来，变为$dp[u][F(A) - prefix]$， 这样就可以复用前面数据计算过的dp数组， 于是$O(Accepted)$</p><p><strong>Code:</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> endl <span class="meta-string">'\n'</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, a, b;</span><br><span class="line"><span class="keyword">int</span> v[<span class="number">12</span>];</span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">12</span>][<span class="number">9300</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">bool</span> limits, <span class="keyword">int</span> pre)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (pre &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (u == <span class="number">-1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (!limits &amp;&amp; dp[u][pre] != <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> dp[u][pre];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>, top = limits ? v[u] : <span class="number">9</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= top; i++) &#123;</span><br><span class="line">        res += dfs(u - <span class="number">1</span>, limits &amp;&amp; (i == top), pre - i * (<span class="number">1</span> &lt;&lt; u));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!limits) dp[u][pre] = res;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (n = <span class="number">0</span>; b &gt; <span class="number">0</span>; b /= <span class="number">10</span>) &#123;</span><br><span class="line">        v[n++] = b % <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>, mul = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (a &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        sum += (a % <span class="number">10</span>) * mul;</span><br><span class="line">        mul &lt;&lt;= <span class="number">1</span>;</span><br><span class="line">        a /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dfs(n - <span class="number">1</span>, <span class="literal">true</span>, sum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="number">0</span>); <span class="built_in">cin</span>.tie(<span class="number">0</span>); <span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">-1</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> T, Case = <span class="number">0</span>; <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span> (T--) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Case #"</span> &lt;&lt; ++Case &lt;&lt; <span class="string">": "</span> &lt;&lt; calc() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=4734&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;题目链接&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;&lt;strong&gt;F(x)&lt;/strong&gt;&lt;br&gt;Time Limit: 1000/500 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)&lt;br&gt;Total Submission(s): 8723    Accepted Submission(s): 3440&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For a decimal number x with n digits ($A^{n}A^{n-1}A^{n-2} … A^{2}A^{1}$), we define its weight as $F(x) = A_n * 2^{n-1} + A_{n-1} * 2^{n-2}+…+ A_2 * 2 + A_1 * 1$. Now you are given two numbers A and B, please calculate how many numbers are there between 0 and B, inclusive, whose weight is no more than F(A).&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Daily" scheme="http://Semon0x29a.github.io/categories/Daily/"/>
     
     
   </entry>
