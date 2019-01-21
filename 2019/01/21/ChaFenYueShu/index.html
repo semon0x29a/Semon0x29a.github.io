@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="题目链接  B-numberTime Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)Total Submission(s): 8748    Accepted Submission(s): 5196   Problem DescriptionA wqb-number, or B-numbe">
+<meta name="description" content="这篇东西瞎写的，作用为防忘，只有一些百度一大把的内容。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HDU-3652 B-number">
-<meta property="og:url" content="http://Semon0x29a.github.io/2018/09/07/HDU-3652/index.html">
+<meta property="og:title" content="差分约束系统">
+<meta property="og:url" content="http://Semon0x29a.github.io/2019/01/21/ChaFenYueShu/index.html">
 <meta property="og:site_name" content="Semon0x29a">
-<meta property="og:description" content="题目链接  B-numberTime Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)Total Submission(s): 8748    Accepted Submission(s): 5196   Problem DescriptionA wqb-number, or B-numbe">
+<meta property="og:description" content="这篇东西瞎写的，作用为防忘，只有一些百度一大把的内容。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-13T03:46:00.860Z">
+<meta property="og:updated_time" content="2019-01-21T11:32:20.520Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HDU-3652 B-number">
-<meta name="twitter:description" content="题目链接  B-numberTime Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)Total Submission(s): 8748    Accepted Submission(s): 5196   Problem DescriptionA wqb-number, or B-numbe">
+<meta name="twitter:title" content="差分约束系统">
+<meta name="twitter:description" content="这篇东西瞎写的，作用为防忘，只有一些百度一大把的内容。">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://Semon0x29a.github.io/2018/09/07/HDU-3652/"/>
+  <link rel="canonical" href="http://Semon0x29a.github.io/2019/01/21/ChaFenYueShu/"/>
 
 
 
 
 
-  <title>HDU-3652 B-number | Semon0x29a</title>
+  <title>差分约束系统 | Semon0x29a</title>
   
 
 
@@ -246,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://Semon0x29a.github.io/2018/09/07/HDU-3652/">
+    <link itemprop="mainEntityOfPage" href="http://Semon0x29a.github.io/2019/01/21/ChaFenYueShu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Semon0x29a">
@@ -263,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">HDU-3652 B-number</h1>
+          <h1 class="post-title" itemprop="name headline">差分约束系统</h1>
         
 
         <div class="post-meta">
@@ -275,8 +275,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-07T22:23:43+08:00">
-                2018-09-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-21T19:31:12+08:00">
+                2019-01-21
               </time>
             
 
@@ -298,8 +298,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Daily/" itemprop="url" rel="index">
-                    <span itemprop="name">Daily</span>
+                  <a href="/categories/tutorial/" itemprop="url" rel="index">
+                    <span itemprop="name">tutorial</span>
                   </a>
                 </span>
 
@@ -316,9 +316,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/07/HDU-3652/#comments" itemprop="discussionUrl">
+                <a href="/2019/01/21/ChaFenYueShu/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/09/07/HDU-3652/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/01/21/ChaFenYueShu/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -346,27 +346,36 @@
       
 
       
-        <p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=3652" target="_blank" rel="noopener">题目链接</a></p>
-<blockquote class="blockquote-center"><p> <strong>B-number</strong><br>Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 8748    Accepted Submission(s): 5196 </p>
-</blockquote>
-<p><strong>Problem Description</strong><br>A wqb-number, or B-number for short, is a non-negative integer whose decimal form<br>contains the sub- string “13” and can be divided by 13. For example, 130 and 2613<br>are wqb-numbers, but 143 and 2639 are not. Your task is to calculate how many<br>wqb-numbers from 1 to n for a given integer n.</p>
+        <p>这篇东西瞎写的，作用为防忘，只有一些百度一大把的内容。</p>
 <a id="more"></a>
-<p><strong>Input</strong><br>Process till EOF. In each line, there is one positive integer n(1 &lt;= n &lt;= 1000000000).</p>
-<p><strong>Output</strong><br>Print each answer in a single line.</p>
-<p><strong>Sample Input</strong></p>
-<pre><code>13
-100
-200
-1000
-</code></pre><p><strong>Sample Output</strong></p>
-<pre><code>1
-1
-2
-2
-</code></pre><p>题意： 求[1, n]中包含字段“13”且被13整除的数的个数</p>
-<p>数位DP， 用pre代表前置状态， pre为0时表示前面没有“13”且前一数位不为1， pre为1时表示前面没有“13”且<br>前一位为1， pre为2时表示前面已有“13”。<br>若当前pre为2，则后续pre均为2。<br>若当前pre为1且当前数位为3， 则下一数位pre为2。<br>若当前pre为0或1且当前数位为1， 则下一数位pre为1<br>其余条件pre为0。</p>
-<p>Code:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> bit[<span class="number">20</span>], tot;</span><br><span class="line"></span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> dp[<span class="number">20</span>][<span class="number">3</span>][<span class="number">13</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> pre, <span class="keyword">bool</span> limits, <span class="keyword">int</span> mod)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (u == tot) &#123;</span><br><span class="line">        <span class="keyword">return</span> (mod == <span class="number">0</span>) &amp;&amp; (pre == <span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!limits &amp;&amp; dp[u][pre][mod] != <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> dp[u][pre][mod];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> top = limits ? bit[u] : <span class="number">9</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= top; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (pre == <span class="number">0</span>) &#123;</span><br><span class="line">            res += dfs(u + <span class="number">1</span>, i == <span class="number">1</span>, limits &amp;&amp; (i == top), (mod * <span class="number">10</span> + i) % <span class="number">13</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (pre == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i == <span class="number">3</span>) &#123;</span><br><span class="line">                res += dfs(u + <span class="number">1</span>, <span class="number">2</span>, limits &amp;&amp; (i == top), (mod * <span class="number">10</span> + i) % <span class="number">13</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                res += dfs(u + <span class="number">1</span>, i == <span class="number">1</span>, limits &amp;&amp; (i == top), (mod * <span class="number">10</span> + i) % <span class="number">13</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            res += dfs(u + <span class="number">1</span>, <span class="number">2</span>, limits &amp;&amp; (i == top), (mod * <span class="number">10</span> + i) % <span class="number">13</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!limits) dp[u][pre][mod] = res;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">solve</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> n)</span> </span>&#123;</span><br><span class="line">    tot = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (n) &#123;</span><br><span class="line">        bit[tot++] = n % <span class="number">10</span>;</span><br><span class="line">        n /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    reverse(bit, bit + tot);</span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">-1</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line">    <span class="keyword">return</span> dfs(<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> n;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%lld"</span>, &amp;n) == <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, solve(n));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="title-占位用"><a href="#title-占位用" class="headerlink" title="title(占位用)"></a><del>title(占位用)</del></h1><h2 id="定义-wiki"><a href="#定义-wiki" class="headerlink" title="定义(wiki)"></a>定义(<a href="https://zh.wikipedia.org/wiki/%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F%E7%B3%BB%E7%BB%9F" target="_blank" rel="noopener">wiki</a>)</h2><p>差分约束系统（System of Difference Constraints），是求解关于一组变数的特殊不等式组之方法。</p>
+<p>如果一个系统由 $n$ 个变量和 $m$ 个约束条件组成，其中每个约束条件形如 $\displaystyle x_{j}-x_{i}\leq b_{k}(i,j\in [1,n],k\in [1,m])$,则称其为差分约束系统。亦即，差分约束系统是求解关于一组变量的特殊不等式组的方法。</p>
+<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><p>求解可转化为单源最短路径问题（有向）。</p>
+<p>首先，最短路径等价于求解一组$d_i, 1 \leq i \leq n$，使得图中任意一条有向边满足$d_v \leq d_u + w_{u,v}$，其中$u$、$v$、$w_{u,v}$分别为该有向边的起点、终点、边权。</p>
+<p>显然，$d_v \leq d_u + w_{u,v}$可转化为$d_v - d_u \leq w_{u,v}$，此时不等式形式与$x_j - x_i \leq b_k$相同。</p>
+<p>因此，以每个变量$x_i$为结点，对于约束条件$x_j - x_i \leq b_k$，连接一条有向边$&lt;i,j&gt;$，边权为$b_k$。再加入超级源$s$，与每个结点$i$连一条有向边$&lt;s,i&gt;$，边权为$0$。对此图跑一遍Bellman-Ford，所得的$d_i$即为一组可行解。</p>
+<h2 id="区间约束"><a href="#区间约束" class="headerlink" title="区间约束"></a>区间约束</h2><h3 id="Statement"><a href="#Statement" class="headerlink" title="Statement"></a>Statement</h3><p>给定一组区间$[l_i, r_i]$，以及一组数$c_i$，求一组点集$S$，使得任一区间$[l_i, r_i]$中均有至少$c_i$个点被选中，且该点集大小$|S|$最小。</p>
+<h3 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h3><p>定义$d_i$为区间$[0, d_i]$上被选中的点的数量，对于给定的$[l_i, r_i]$、$c_i$，有：</p>
+<p>$$ d_{r_i} - d_{l_i - 1} \geq c_i $$</p>
+<p>变形为：</p>
+<p>$$ d_{l_i - 1} - d_{r_i} \leq -{c_i} $$</p>
+<p>而对于任一$d_i$，有：</p>
+<p>$$ 0 \leq d_i - d_{i-1} \leq 1 $$</p>
+<p>即：</p>
+<p>$$ d_i - d_{i-1} \leq 1 $$<br>$$ d_{i-1} - d_i \leq 0 $$</p>
+<p>模型构造完成。</p>
+<h3 id="例题连接"><a href="#例题连接" class="headerlink" title="例题连接"></a>例题连接</h3><p><a href="https://cn.vjudge.net/problem/POJ-1201#author=634579757" target="_blank" rel="noopener">POJ-1201</a><br><a href="https://cn.vjudge.net/solution/17876394" target="_blank" rel="noopener">Solution</a></p>
+<h2 id="线性约束"><a href="#线性约束" class="headerlink" title="线性约束"></a>线性约束</h2><h3 id="Statement-1"><a href="#Statement-1" class="headerlink" title="Statement"></a>Statement</h3><p>$n$个人编号为$1$~$n$，且按照编号顺序排成直线，任意两人位置不重合。<br>给定$p$组约束条件$(a_i, b_i, c_i)$，表示$a_i$与$b_i$之间距离不能大于$c_i$。<br>给定$q$组约束条件$(a_j, b_j, c_j)$，表示$a_j$与$b_j$之间距离不能小于$c_j$。<br>若排列方案存在，输出$1$与$n$之间的最长可能距离。若不存在，输出$-1$。若无限长，输出$-2$。</p>
+<h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h3><p>定义$d_i$为$i$所在位置，则对于第一种约束条件，有:</p>
+<p>$$ d_{b_i} - d_{a_i} \leq c_i $$</p>
+<p>对于第二种约束条件，有：</p>
+<p>$$ d_{b_i} - d_{a_i} \geq c_i \space =&gt; \space d_{a_i} - d_{b_i} \leq -c_i $$</p>
+<p>此处均默认$a_i &lt; b_i$，若$a_i &gt; b_i$，需将二者交换。</p>
+<p>另外，根据题目描述，有：</p>
+<p>$$ d_i - d_{i-1} \geq 1 \space =&gt; \space d_{i-1} - d_i \leq -1 $$</p>
+<p>模型构建完成。</p>
+<p>若存在负环，则不存在方案。若无法到达$n$，则两者距离可能无限长。否则最长距离即$1$到$n$的最短路长度。</p>
+
       
     </div>
     
@@ -390,8 +399,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/07/poj-1185/" rel="next" title="POJ-1185 炮兵阵地">
-                <i class="fa fa-chevron-left"></i> POJ-1185 炮兵阵地
+              <a href="/2019/01/17/190117/" rel="next" title="Jan.17th 2019">
+                <i class="fa fa-chevron-left"></i> Jan.17th 2019
               </a>
             
           </div>
@@ -399,10 +408,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/10/XuZhouOnlineJ/" rel="prev" title="2018 ICPC XuZhou Online J Maze Designer">
-                2018 ICPC XuZhou Online J Maze Designer <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -464,8 +469,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -565,6 +579,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#title-占位用"><span class="nav-number">1.</span> <span class="nav-text">title(占位用)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-wiki"><span class="nav-number">1.1.</span> <span class="nav-text">定义(wiki)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法"><span class="nav-number">1.2.</span> <span class="nav-text">解法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区间约束"><span class="nav-number">1.3.</span> <span class="nav-text">区间约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Statement"><span class="nav-number">1.3.1.</span> <span class="nav-text">Statement</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Solution"><span class="nav-number">1.3.2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例题连接"><span class="nav-number">1.3.3.</span> <span class="nav-text">例题连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性约束"><span class="nav-number">1.4.</span> <span class="nav-text">线性约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Statement-1"><span class="nav-number">1.4.1.</span> <span class="nav-text">Statement</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Solution-1"><span class="nav-number">1.4.2.</span> <span class="nav-text">Solution</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -724,9 +754,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://Semon0x29a.github.io/2018/09/07/HDU-3652/';
-          this.page.identifier = '2018/09/07/HDU-3652/';
-          this.page.title = 'HDU-3652 B-number';
+          this.page.url = 'http://Semon0x29a.github.io/2019/01/21/ChaFenYueShu/';
+          this.page.identifier = '2019/01/21/ChaFenYueShu/';
+          this.page.title = '差分约束系统';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://semon0x29a.disqus.com/embed.js';
