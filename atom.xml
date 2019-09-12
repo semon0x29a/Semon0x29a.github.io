@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Semon0x29a.github.io/"/>
-  <updated>2019-05-01T08:15:38.991Z</updated>
+  <updated>2019-09-12T06:04:09.093Z</updated>
   <id>http://Semon0x29a.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sept.12th</title>
+    <link href="http://Semon0x29a.github.io/2019/09/12/190912/"/>
+    <id>http://Semon0x29a.github.io/2019/09/12/190912/</id>
+    <published>2019-09-12T05:20:06.000Z</published>
+    <updated>2019-09-12T06:04:09.093Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><hr><p><del>CF 沉迷打小号</del></p><hr><p><del>达成成就: 数分1234全挂</del></p><hr><p><del>本学期已打下7(+1?)(+2?)个名额</del></p><hr><p><del>感觉自己越来越菜(1/1)</del></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;del&gt;CF 沉迷打小号&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;del&gt;达成成就: 数分1234全挂&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;del&gt;本学期已打下7(+1?)(+2?)个名额&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+      <category term="Nonsense" scheme="http://Semon0x29a.github.io/categories/Nonsense/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>May 1st</title>
@@ -419,28 +450,6 @@
     </summary>
     
       <category term="JustWannaSpeakSth" scheme="http://Semon0x29a.github.io/categories/JustWannaSpeakSth/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HDU 3466 Proud Merchants</title>
-    <link href="http://Semon0x29a.github.io/2018/09/20/HDU3466/"/>
-    <id>http://Semon0x29a.github.io/2018/09/20/HDU3466/</id>
-    <published>2018-09-20T12:47:04.000Z</published>
-    <updated>2018-09-20T13:03:21.969Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p> Proud Merchants<br>Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 131072/65536 K (Java/Others)<br>Total Submission(s): 8292    Accepted Submission(s): 3481 </p></blockquote><p><strong>Problem Description</strong><br>Recently, iSea went to an ancient country. For such a long time, it was the most wealthy and powerful kingdom in the world. As a result, the people in this country are still very proud even if their nation hasn’t been so wealthy any more.<br>The merchants were the most typical, each of them only sold exactly one item, the price was Pi, but they would refuse to make a trade with you if your money were less than Qi, and iSea evaluated every item a value Vi.<br>If he had M units of money, what’s the maximum value iSea could get?</p><a id="more"></a><p><strong>Input</strong><br>There are several test cases in the input.</p><p>Each test case begin with two integers N, M (1 ≤ N ≤ 500, 1 ≤ M ≤ 5000), indicating the items’ number and the initial money.<br>Then N lines follow, each line contains three numbers Pi, Qi and Vi (1 ≤ Pi ≤ Qi ≤ 100, 1 ≤ Vi ≤ 1000), their meaning is in the description.</p><p>The input terminates by end of file marker.</p><p><strong>Output</strong><br>For each test case, output one integer, indicating maximum value iSea could get.</p><p><strong>Sample Input</strong><br>2 10<br>10 15 10<br>5 10 5<br>3 10<br>5 10 5<br>3 5 6<br>2 7 3</p><p><strong>Sample Output</strong><br>5<br>11</p><p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=3466" target="_blank" rel="noopener">题目链接</a></p><p>题意：</p><p>给定$n$件物品，第$i$件物品价格为$p_i$，且至少需要有$q_i$元才能买，价值为$v_i$。求当有$m$元时能获得的最大价值。</p><p>Solution:</p><p>乍一看就是个普通的01背包，实际上并不是。因为至少需要有$q_i$元才能买某一件物品，所以购买的先后顺序具有后效性。<br>显然，当$p_{1} + q_{2} \leq k &lt; p_{2} + q_{1}$时，先买1号物品还能再买2号物品，但先买2号物品就不能再买1号物品了，即满足$q_{1} - p_{1} &gt; q_{2} - p_{2}$时，应先买1号再买2号。<br>然而我们应按照$q_i - p_i$从小到大排序，引用网上看到的：</p><pre><code>通俗的说：这个dp过程正好是逆向的dp[c-p[i]]是dp[c]的最优子结构。所以在DP的时候我们应该按照M的值从小到大排序。</code></pre><p>排序后直接套01背包即可。</p><p>Code:</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> endl <span class="meta-string">"\n"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> id[<span class="number">505</span>];</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">505</span>], q[<span class="number">505</span>], v[<span class="number">505</span>];</span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">5005</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="number">0</span>); <span class="built_in">cin</span>.tie(<span class="number">0</span>); <span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n, m;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; p[i] &gt;&gt; q[i] &gt;&gt; v[i], id[i] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        sort(id + <span class="number">1</span>, id + <span class="number">1</span> + n, [&amp;](<span class="keyword">const</span> <span class="keyword">int</span>&amp; a, <span class="keyword">const</span> <span class="keyword">int</span>&amp; b) &#123;</span><br><span class="line">            <span class="keyword">return</span> q[a] - p[a] &lt; q[b] - p[b];</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= n; k++) &#123;</span><br><span class="line">            <span class="keyword">int</span> i = id[k], edge = max(p[i], q[i]);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = m; j &gt;= edge; j--) &#123;</span><br><span class="line">                dp[j] = max(dp[j], dp[j - p[i]] + v[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; dp[m] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt; Proud Merchants&lt;br&gt;Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 131072/65536 K (Java/Others)&lt;br&gt;Total Submission(s): 8292    Accepted Submission(s): 3481 &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Problem Description&lt;/strong&gt;&lt;br&gt;Recently, iSea went to an ancient country. For such a long time, it was the most wealthy and powerful kingdom in the world. As a result, the people in this country are still very proud even if their nation hasn’t been so wealthy any more.&lt;br&gt;The merchants were the most typical, each of them only sold exactly one item, the price was Pi, but they would refuse to make a trade with you if your money were less than Qi, and iSea evaluated every item a value Vi.&lt;br&gt;If he had M units of money, what’s the maximum value iSea could get?&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Daily" scheme="http://Semon0x29a.github.io/categories/Daily/"/>
     
     
   </entry>
